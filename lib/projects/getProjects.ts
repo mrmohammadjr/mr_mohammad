@@ -1,8 +1,9 @@
-import { supabaseAdmin } from "../supabase/client";
+import { createClient } from "../supabase/client";
 
 export async function getProjects() {
   try {
-    const { data, error } = await supabaseAdmin
+    const supabase = createClient(); 
+    const { data, error } = await supabase
       .from("projects")
       .select(
         `

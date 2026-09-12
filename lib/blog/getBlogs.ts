@@ -1,10 +1,11 @@
 // lib/blog/getBlogs.ts
 
-import { supabaseAdmin } from "../supabase/client";
+import { createClient } from "../supabase/client";
 
 export async function getBlogs() {
   try {
-    const { data, error } = await supabaseAdmin
+    const supabase = createClient(); 
+    const { data, error } = await supabase
       .from("blogs")
       .select(
         `
