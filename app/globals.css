@@ -27,3 +27,6 @@ body {
 .image{
   mix-blend-mode: multiply;
 }
+.rightToLeft{
+  direction: rtl;
+}
