@@ -145,7 +145,7 @@ export default function BlogModal({ post }: { post: Blog }) {
 
         {/* ================= SCROLL CONTENT ================= */}
 
-        <div className="min-h-0 flex-1 overflow-y-auto">
+        <div className="min-h-0 flex-1 overflow-y-auto rightToLeft">
           <div className="mx-auto max-w-4xl px-5 pb-16 pt-10 sm:px-8 sm:pb-20 sm:pt-14 lg:px-10">
             {/* Label */}
 
